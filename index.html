@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+
+    <h1>FORM</h1>
+    <form>
+        <label for="firstname">Enter your first-name:</label>
+      <input type="text" name="firstname" id="firstname" placeholder="Enter your first-name"><br/><br/>
+    
+      <label for="lastname">Enter your last-name:</label>
+      <input type="text" name="lastname" id="lastname" placeholder="Enter your last-name"><br/><br/>
+
+      <label for="dateofbirth">Enter your Date-of-birth</label>
+      <input type="date" name="dateofbirth" id="dateofbirth"><br/><br/>
+
+      <label for="e-mail">Enter your e-mail id:</label>
+      <input type="email" name="e-mail" id="e-mail" placeholder="xyz@gmail.com"><br/></br>
+
+      <label for="message"> Enter your message:</label>
+      <textarea name="message" id="message" cols="20" rows="10" placeholder="Enter your message"></textarea><br/></br>
+
+      <button onclick="alert('Hello'+ ' '+document.getElementById('firstname').value+' ' + document.getElementById('lastname').value +' '+ 'You have submitted the form which includ that your E-mail id ' + ' '+ document.getElementById('e-mail').value +' ' + 'and your DOB is' + document.getElementById('dateofbirth').value + '.' + 'We have got your message , which is '+ ' '+ document.getElementById('message').value + ' '+ ' Thank You .')">Submit</button>
+    </form>
+</body>
+</html>
